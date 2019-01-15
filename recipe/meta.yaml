@@ -30,7 +30,6 @@ requirements:
     - numba
     - numpy
     - pillow
-    - planarity
     - scipy
     - sympy
 
