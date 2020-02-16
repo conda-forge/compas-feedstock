@@ -1,8 +1,8 @@
 {% set name = "COMPAS" %}
-{% set version = "0.14.0" %}
+{% set version = "0.15.1" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "895f0fe6bcbfa7e17e507876da5bd6ac0cb231020ae72681de5a73d7c84a34c3" %}
+{% set hash_value = "52a8d907983eef1bd37ed434f5fb6d74e9c595cec6f970a27e48ef4a2a21cd63" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
   {{ hash_type }} : {{ hash_value }}
 
 build:
-  number: 1
+  number: 0
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
