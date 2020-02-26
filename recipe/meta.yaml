@@ -1,8 +1,8 @@
 {% set name = "COMPAS" %}
-{% set version = "0.15.2" %}
+{% set version = "0.15.3" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "7a86d3cb9135274fea42000f94305d7bfd859c544735e80deeaf289b6ccc3a32" %}
+{% set hash_value = "52aeba6484918cdb0199ab3b9d2c2d288ab2f2741aab0f5242eb0f1656ea0d8d" %}
 
 package:
   name: {{ name|lower }}
