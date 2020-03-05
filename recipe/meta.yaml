@@ -1,17 +1,14 @@
 {% set name = "COMPAS" %}
-{% set version = "0.15.3" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "52aeba6484918cdb0199ab3b9d2c2d288ab2f2741aab0f5242eb0f1656ea0d8d" %}
+{% set version = "0.15.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ file_ext }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  {{ hash_type }} : {{ hash_value }}
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 7c41a976dba6c929a65e02f24934759a01150bf8ac02183b688626e35c5ba87c
 
 build:
   number: 0
