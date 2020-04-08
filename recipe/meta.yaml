@@ -11,9 +11,12 @@ source:
   sha256: 4452f10b9bacf2dbab6ebe17c6073166c47b76cec03a613c0d04e18b47d72975
 
 build:
-  number: 1
+  number: 2
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  entry_points:
+    - "compas_rpc=compas.rpc.__main__:main"
+    - "compas_install_rhinoplugin=compas_rhino.install_plugin:main"
 
 requirements:
   host:
