@@ -11,7 +11,7 @@ source:
   sha256: 4452f10b9bacf2dbab6ebe17c6073166c47b76cec03a613c0d04e18b47d72975
 
 build:
-  number: 2
+  number: 3
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
@@ -28,6 +28,7 @@ requirements:
     - cython
     - ezdxf
     - python
+    - imageio >=2.7
     - matplotlib-base >=2.2,<3.0  # [py2k]
     - matplotlib-base >=2.2,<3.1  # [win and not py2k]
     - matplotlib-base >=2.2  # [not win and not py2k]
