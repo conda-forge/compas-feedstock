@@ -28,7 +28,7 @@ requirements:
     - cython
     - ezdxf
     - python
-    - imageio >= 2.7
+    - imageio >=2.7
     - matplotlib-base >=2.2,<3.0  # [py2k]
     - matplotlib-base >=2.2,<3.1  # [win and not py2k]
     - matplotlib-base >=2.2  # [not win and not py2k]
