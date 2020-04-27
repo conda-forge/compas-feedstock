@@ -1,5 +1,5 @@
 {% set name = "COMPAS" %}
-{% set version = "0.15.5" %}
+{% set version = "0.15.6" %}
 
 package:
   name: {{ name|lower }}
@@ -8,15 +8,15 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4452f10b9bacf2dbab6ebe17c6073166c47b76cec03a613c0d04e18b47d72975
+  sha256: 61bee5f6831abc2bc168a95b67b6374797906bba866e8b75ab057fb2307e2818
 
 build:
-  number: 3
+  number: 0
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
-    - "compas_rpc=compas.rpc.__main__:main"
-    - "compas_install_rhinoplugin=compas_rhino.install_plugin:main"
+    - compas_rpc=compas.rpc.__main__:main
+    - compas_install_rhinoplugin=compas_rhino.install_plugin:main
 
 requirements:
   host:
