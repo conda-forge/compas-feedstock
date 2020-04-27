@@ -11,7 +11,7 @@ source:
   sha256: 61bee5f6831abc2bc168a95b67b6374797906bba866e8b75ab057fb2307e2818
 
 build:
-  number: 0
+  number: 1
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
@@ -29,9 +29,9 @@ requirements:
     - ezdxf
     - python
     - imageio >=2.7
-    - matplotlib-base >=2.2,<3.0  # [py2k]
-    - matplotlib-base >=2.2,<3.1  # [win and not py2k]
-    - matplotlib-base >=2.2  # [not win and not py2k]
+    - matplotlib-base >=2.2,<3.1  # [win and py<=37]
+    - matplotlib-base >=3.1       # [win and py>=38]
+    - matplotlib-base >=2.2       # [not win]
     - networkx
     - numba
     - numpy >=1.15
@@ -39,7 +39,6 @@ requirements:
     - python-planarity
     - scipy >=1.1
     - sympy
-    - xorg-libxext           # [linux and py27]
 
 test:
   imports:
