@@ -1,5 +1,5 @@
 {% set name = "COMPAS" %}
-{% set version = "0.16.2" %}
+{% set version = "0.16.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,15 +8,14 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7486ebc6c13fa0d8f5bff2790263df4c5f5472db90d62451166a01dad68de4f3
+  sha256: e62f44562fb05adf7c46eb8094453bfcc074391cfba292e768c58cdef0ea58ba
 
 build:
-  number: 0
+  number: 3
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
     - compas_rpc=compas.rpc.__main__:main
-    - compas_install_rhinoplugin=compas_rhino.install_plugin:main
 
 requirements:
   host:
@@ -29,14 +28,16 @@ requirements:
     - ezdxf
     - python
     - imageio >=2.7
+    - jsonschema
     - matplotlib-base >=2.2,<3.1  # [win and py<=37]
     - matplotlib-base >=3.1       # [win and py>=38]
     - matplotlib-base >=2.2       # [not win]
     - networkx
     - numba
-    - numpy >=1.15
+    - numpy >=1.15.4
     - pillow
     - python-planarity
+    - schema
     - scipy >=1.1
     - sympy
 
