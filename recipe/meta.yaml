@@ -16,7 +16,6 @@ build:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
     - compas_rpc=compas.rpc.__main__:main
-    - compas_install_rhinoplugin=compas_rhino.install_plugin:main
 
 requirements:
   host:
