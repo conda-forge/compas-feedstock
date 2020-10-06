@@ -36,7 +36,6 @@ requirements:
     - numba
     - numpy >=1.15.4
     - pillow
-    - polyfempy
     - pycollada
     - python-planarity
     - schema
