@@ -23,12 +23,12 @@ requirements:
     - pip
     - setuptools
   run:
-    - binaryornot
     - cython
     - ezdxf
     - python
     - imageio >=2.7
     - jsonschema
+    - laspy
     - matplotlib-base >=2.2,<3.1  # [win and py<=37]
     - matplotlib-base >=3.1       # [win and py>=38]
     - matplotlib-base >=2.2       # [not win]
@@ -36,10 +36,14 @@ requirements:
     - numba
     - numpy >=1.15.4
     - pillow
+    - polyfem
+    - pycollada
     - python-planarity
     - schema
     - scipy >=1.1
     - sympy
+    - watchdog
+    - wildmeshing
 
 test:
   imports:
@@ -47,6 +51,7 @@ test:
     - compas_blender
     - compas_ghpython
     - compas_rhino
+    - compas_plotters
 
 about:
   home: http://compas-dev.github.io
