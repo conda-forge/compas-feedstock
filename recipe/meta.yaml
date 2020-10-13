@@ -42,7 +42,6 @@ requirements:
     - scipy >=1.1
     - sympy
     - watchdog
-    - wildmeshing
 
 test:
   imports:
