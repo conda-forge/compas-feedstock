@@ -5,9 +5,13 @@ Home: http://compas-dev.github.io
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/compas-feedstock/blob/master/LICENSE.txt)
 
 Summary: The COMPAS framework
+
+Development: https://github.com/compas-dev/compas
+
+Documentation: https://compas-dev.github.io
 
 COMPAS is an open-source, Python-based computational framework
 for collaboration and research in architecture, engineering and
