@@ -11,7 +11,7 @@ source:
   sha256: 3a421eedfed12b49cecc7d2cd1001e34c9a0958529df3fb3b01a006b6f73c9aa
 
 build:
-  number: 0
+  number: 1
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
@@ -42,7 +42,6 @@ requirements:
     - scipy >=1.1
     - sympy
     - watchdog
-    - wildmeshing
 
 test:
   imports:
