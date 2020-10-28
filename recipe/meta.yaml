@@ -1,5 +1,5 @@
 {% set name = "COMPAS" %}
-{% set version = "0.16.9" %}
+{% set version = "0.17.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 84e1d8f0934d096b5c1d40f41e646f85f28e5f0b10dd4869f881499bc644ed10
+  sha256: b5954746673a2a46d0d0129e425ee95dd32bf1b49d82d3692a2c52eb746d3116
 
 build:
   number: 0
@@ -52,7 +52,7 @@ test:
     - compas_plotters
 
 about:
-  home: http://compas-dev.github.io
+  home: https://compas.dev
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -64,7 +64,7 @@ about:
     Group (https://block.arch.ethz.ch) of ETH Zurich (http://www.ethz.ch),
     with the support of the National Centre for Competence in
     Research on "Digital Fabrication" (http://www.dfab.ch).
-  doc_url: https://compas-dev.github.io
+  doc_url: https://compas.dev
   dev_url: https://github.com/compas-dev/compas
 
 extra:
