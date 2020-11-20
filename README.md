@@ -1,7 +1,7 @@
 About compas
 ============
 
-Home: http://compas-dev.github.io
+Home: https://compas.dev
 
 Package license: MIT
 
@@ -11,7 +11,7 @@ Summary: The COMPAS framework
 
 Development: https://github.com/compas-dev/compas
 
-Documentation: https://compas-dev.github.io
+Documentation: https://compas.dev
 
 COMPAS is an open-source, Python-based computational framework
 for collaboration and research in architecture, engineering and
