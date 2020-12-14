@@ -11,7 +11,7 @@ source:
   sha256: 0c0f2bd5cef7f112a68f12e192b02b4c36bfcc01090f19742d9c06014e1b022b
 
 build:
-  number: 0
+  number: 1
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
@@ -34,7 +34,8 @@ requirements:
     - matplotlib-base >=2.2       # [not win]
     - networkx
     - numba
-    - numpy >=1.15.4
+    - numpy >=1.15.4              # [not win]
+    - numpy >=1.15.4, <= 1.19.3   # [win]
     - pillow
     - pycollada
     - python-planarity
