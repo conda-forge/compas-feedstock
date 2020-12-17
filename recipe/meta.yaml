@@ -1,5 +1,5 @@
 {% set name = "COMPAS" %}
-{% set version = "0.19.1" %}
+{% set version = "0.19.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0c0f2bd5cef7f112a68f12e192b02b4c36bfcc01090f19742d9c06014e1b022b
+  sha256: a10d23e4d767d3d18c70348600fcaf1139c1382f9b1acf0cd66c2e0b88aa26f4
 
 build:
-  number: 1
+  number: 0
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
