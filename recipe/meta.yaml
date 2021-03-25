@@ -34,8 +34,7 @@ requirements:
     - matplotlib-base >=2.2       # [not win]
     - networkx
     - numba
-    - numpy >=1.15.4              # [not win]
-    - numpy >=1.15.4, <= 1.19.3   # [win]
+    - numpy >=1.15.4
     - pillow
     - pycollada
     - python-planarity
