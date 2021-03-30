@@ -50,6 +50,10 @@ test:
     - compas_ghpython
     - compas_rhino
     - compas_plotters
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://compas.dev
