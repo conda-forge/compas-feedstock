@@ -41,6 +41,7 @@ requirements:
     - schema
     - scipy >=1.1
     - sympy
+    - typing_extensions
     - watchdog
 
 test:
