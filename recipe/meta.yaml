@@ -23,7 +23,7 @@ requirements:
     - pip
     - setuptools
   run:
-    - cython
+    - cython <=0.29.23
     - ezdxf
     - python
     - imageio >=2.7
