@@ -25,7 +25,8 @@ requirements:
   run:
     - cython <=0.29.23
     - ezdxf
-    - python
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - imageio >=2.7
     - jsonschema
     - laspy
