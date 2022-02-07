@@ -11,7 +11,7 @@ source:
   sha256: 4f162709dcfd4b09fe78df7d881c698de8636b5a7f0cbe702f387cbadea81d48
 
 build:
-  number: 0
+  number: 1
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
@@ -26,12 +26,12 @@ requirements:
     - pip
     - setuptools
   run:
-    - cython <=0.29.23
-    - ezdxf
+    - cython
+    # - ezdxf
     - python
     - imageio >=2.7
     - jsonschema
-    - laspy
+    # - laspy
     - matplotlib-base >=2.2,<3.1  # [win and py<=37]
     - matplotlib-base >=3.1       # [win and py>=38]
     - matplotlib-base >=2.2       # [not win]
