@@ -1,5 +1,5 @@
 {% set name = "COMPAS" %}
-{% set version = "1.15.0" %}
+{% set version = "1.15.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 311717f9658de6b8035ed52c242fa6e786591c9c52c2f78c25039eef6b556788
+  sha256: 7c502af1413618c7ebae0e1346a49bb05ec1ced3da47b57af6a0114d7aae8186
 
 build:
   number: 0
@@ -36,11 +36,9 @@ requirements:
     - matplotlib-base >=3.1       # [win and py>=38]
     - matplotlib-base >=2.2       # [not win]
     - networkx
-    - numba
     - numpy
     - pillow
     - pycollada
-    - python-planarity
     - schema
     - scipy >=1.1
     - sympy
