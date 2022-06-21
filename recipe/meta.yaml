@@ -1,5 +1,5 @@
 {% set name = "COMPAS" %}
-{% set version = "1.15.1" %}
+{% set version = "1.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7c502af1413618c7ebae0e1346a49bb05ec1ced3da47b57af6a0114d7aae8186
+  sha256: 07b9f52534693f494db48a23464259ac890f75f8e63aa3845f34e59d31e5a9e0
 
 build:
   number: 0
@@ -27,11 +27,9 @@ requirements:
     - setuptools
   run:
     - cython
-    - ezdxf
     - python
     - imageio >=2.7
     - jsonschema
-    - laspy
     - matplotlib-base >=2.2,<3.1  # [win and py<=37]
     - matplotlib-base >=3.1       # [win and py>=38]
     - matplotlib-base >=2.2       # [not win]
