@@ -49,7 +49,6 @@ test:
     - compas_blender
     - compas_ghpython
     - compas_rhino
-    - compas_plotters
   commands:
     - pip check
   requires:
