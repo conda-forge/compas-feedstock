@@ -11,7 +11,7 @@ source:
   sha256: 12da312c6fa511efabcc1cc0eaecc42695a8d61d9a4d6af8cf7aa8ace9ac4c53
 
 build:
-  number: 0
+  number: 1
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
@@ -26,7 +26,6 @@ requirements:
     - pip
     - setuptools
   run:
-    - cython
     - python
     - imageio >=2.7
     - jsonschema >=4.17,<4.18
@@ -36,7 +35,6 @@ requirements:
     - networkx
     - numpy
     - pillow
-    - pycollada
     - schema
     - scipy >=1.1
     - sympy
