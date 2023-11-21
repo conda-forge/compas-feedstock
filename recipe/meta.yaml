@@ -26,7 +26,6 @@ requirements:
     - pip
     - setuptools
   run:
-    - cython
     - python
     - imageio >=2.7
     - jsonschema >=4.17,<4.18
@@ -36,7 +35,6 @@ requirements:
     - networkx
     - numpy
     - pillow
-    - pycollada
     - schema
     - scipy >=1.1
     - sympy
