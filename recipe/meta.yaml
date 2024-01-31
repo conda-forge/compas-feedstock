@@ -11,7 +11,7 @@ source:
   sha256: f7b070c68ec807e3a3737001177e5fdd40f5c3a3b8342539516e78d00bf7ddcc
 
 build:
-  number: 0
+  number: 1
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
@@ -27,17 +27,10 @@ requirements:
     - setuptools
   run:
     - python
-    - imageio >=2.7
-    - jsonschema >=4.17,<4.18
-    - matplotlib-base >=2.2,<3.1  # [win and py<=37]
-    - matplotlib-base >=3.1       # [win and py>=38]
-    - matplotlib-base >=2.2       # [not win]
-    - networkx
-    - numpy
-    - pillow
-    - schema
+    - jsonschema
+    - networkx >= 3.0
+    - numpy >= 1.15.4
     - scipy >=1.1
-    - sympy
     - typing_extensions
     - watchdog
 
