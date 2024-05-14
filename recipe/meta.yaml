@@ -18,13 +18,9 @@ build:
     - compas_rpc=compas.rpc.__main__:main
 
 requirements:
-  build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
-    - python
+    - python >=3.9
     - pip
-    - setuptools
   run:
     - python
     - jsonschema
