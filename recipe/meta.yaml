@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
@@ -25,7 +25,7 @@ requirements:
     - python >=3.9
     - jsonschema
     - networkx >=3.0
-    - numpy >=1.15.4
+    - numpy >=1.15.4, <2.0
     - scipy >=1.1
     - watchdog
 
