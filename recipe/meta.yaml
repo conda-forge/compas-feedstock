@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 8ef4828171fe414f0c2b4a0c1e16413c1faf63aff8c0ee6e9f3fcdf2a59016f1
 
 build:
@@ -19,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - jsonschema
     - networkx >=3.0
     - numpy >=1.15.4, <2.0
@@ -31,6 +31,9 @@ requirements:
     - watchdog
 
 test:
+  requires:
+    - python {{ python_min }}
+    - pip
   imports:
     - compas
     - compas_blender
@@ -38,8 +41,6 @@ test:
     - compas_rhino
   commands:
     - pip check
-  requires:
-    - pip
 
 about:
   home: https://compas.dev
