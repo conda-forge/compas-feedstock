@@ -1,5 +1,5 @@
 {% set name = "compas" %}
-{% set version = "2.15.0" %}
+{% set version = "2.15.1" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f3fa2143a6287651771693aa1bffe20c7ae99858451ea7776a3841baf12f7d1e
+  sha256: 57ad5aaa1dc33333fc3938ac53623b45ecbd0dce3704a9658986227c30fe085c
 
 build:
   noarch: python
